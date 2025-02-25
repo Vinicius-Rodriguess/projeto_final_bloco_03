@@ -27,7 +27,7 @@ function Navbar() {
               />
               <button
                 type="submit"
-                className="h-9 w-9 p-2.5 ms-2 text-sm font-medium text-white bg-teal-500 hover:bg-teal-900 rounded-lg border border-teal-700"
+                className="h-9 w-9 p-2.5 ms-2 text-sm font-medium text-white bg-teal-500 hover:bg-teal-900 rounded-lg border border-teal-700 cursor-pointer"
               >
                 <MagnifyingGlass size={14} weight="bold" />
               </button>
@@ -35,15 +35,33 @@ function Navbar() {
           </div>
 
           <div className="flex items-center gap-4 py-4">
-            <Link to="/categorias" className="hover:underline">
+            <Link to="/produtos" className="hover:underline hover:scale-105 transition-all">
+              Produtos
+            </Link>
+            <Link
+              to="/categorias"
+              className="hover:underline hover:scale-105 transition-all"
+            >
               Categorias
             </Link>
-            <Link to="/cadastrarcategoria" className="hover:underline">
+            <Link
+              to="/cadastrarcategoria"
+              className="hover:underline hover:scale-105 transition-all"
+            >
               Cadastrar Categoria
             </Link>
-            <User size={32} weight="bold" />
 
-            <ShoppingCart size={32} weight="bold" />
+            <User
+              size={32}
+              weight="bold"
+              className="cursor-pointer hover:scale-105 transition-all"
+            />
+
+            <ShoppingCart
+              size={32}
+              weight="bold"
+              className="cursor-pointer hover:scale-105 transition-all"
+            />
           </div>
         </div>
       </div>
