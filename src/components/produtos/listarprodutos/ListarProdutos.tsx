@@ -1,6 +1,6 @@
 ﻿/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
-import { PacmanLoader } from "react-spinners";
+import { HashLoader } from "react-spinners";
 import Produto from "../../../models/Produto";
 import { listar } from "../../../services/Service";
 import CardProdutos from "../cardprodutos/CardProdutos";
@@ -29,12 +29,11 @@ function ListarProdutos() {
   return (
     <>
       {isLoading && (
-        <PacmanLoader
+        <HashLoader 
           color="#0D9488"
-          margin={0}
           size={80}
           speedMultiplier={2}
-          aria-label="Pacman-loading"
+          aria-label="HashLoader-loading"
           className="mx-auto my-8"
         />
       )}

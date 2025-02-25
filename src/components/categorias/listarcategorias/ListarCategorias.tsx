@@ -1,6 +1,6 @@
 ﻿/* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
-import { PacmanLoader } from "react-spinners";
+import { HashLoader } from "react-spinners";
 import Categoria from "../../../models/Categoria";
 import { listar } from "../../../services/Service";
 import CardCategorias from "../cardcategorias/CardCategorias";
@@ -30,12 +30,11 @@ function ListarCategorias() {
   return (
     <>
       {isLoading && (
-        <PacmanLoader
+        <HashLoader
           color="#0D9488"
-          margin={0}
           size={80}
           speedMultiplier={2}
-          aria-label="Pacman-loading"
+          aria-label="HashLoader-loading"
           className="mx-auto my-8"
         />
       )}

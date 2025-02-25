@@ -132,10 +132,9 @@ function FormProduto() {
             value={produto.nome}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             type="text"
-            placeholder="Insira aqui o nome do Produto"
             name="nome"
             required
-            className="p-2 bg-white border-2 rounded border-slate-700"
+            className="p-2 bg-white border-2 rounded border-slate-700 shadow-md"
           />
         </div>
 
@@ -147,10 +146,9 @@ function FormProduto() {
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             type="number"
             step=".01"
-            placeholder="Adicione aqui o preço do Produto"
             name="preco"
             required
-            className="p-2 bg-white border-2 rounded border-slate-700"
+            className="p-2 bg-white border-2 rounded border-slate-700 shadow-md"
           />
         </div>
 
@@ -161,10 +159,9 @@ function FormProduto() {
             value={produto.foto}
             onChange={(e: ChangeEvent<HTMLInputElement>) => atualizarEstado(e)}
             type="text"
-            placeholder="Adicione aqui a foto do Produto"
             name="foto"
             required
-            className="p-2 bg-white border-2 rounded border-slate-700"
+            className="p-2 bg-white border-2 rounded border-slate-700 shadow-md"
           />
         </div>
 
@@ -173,7 +170,7 @@ function FormProduto() {
           <select
             name="categoria"
             id="categoria"
-            className="p-2 bg-white border-2 rounded border-slate-700"
+            className="p-2 bg-white border-2 rounded border-slate-700 shadow-md"
             onChange={(e) => buscarCategoriaPorId(e.currentTarget.value)}
           >
             <option value="" selected disabled>
@@ -189,7 +186,7 @@ function FormProduto() {
         <button
           type="submit"
           disabled={carregandoCategoria}
-          className="flex justify-center w-1/2 py-2 mx-auto font-bold text-white rounded disabled:bg-slate-200 bg-slate-400 hover:bg-slate-800"
+          className="flex justify-center w-1/2 py-2 mx-auto font-bold text-white rounded disabled:bg-slate-200 bg-slate-400 hover:bg-slate-800 cursor-pointer hover:scale-101 shadow-md transition-all"
         >
           {isLoading ? (
             <RotatingLines

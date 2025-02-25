@@ -8,7 +8,7 @@ interface CardProdutoProps {
 
 function CardProdutos({ produto }: CardProdutoProps) {
   return (
-    <div className="flex flex-col justify-between my-10 overflow-hidden bg-white rounded-lg">
+    <div className="flex flex-col justify-between my-10 overflow-hidden bg-white rounded-lg shadow-md hover:scale-101 transition-all">
       <div className="flex items-end justify-end pt-2 pr-2">
         <Link to={`/editarproduto/${produto.id}`}>
           <Pencil size={24} className="mr-1 hover:fill-teal-800" />
@@ -40,7 +40,7 @@ function CardProdutos({ produto }: CardProdutoProps) {
         </div>
       </div>
       <div className="flex flex-wrap">
-        <button className="flex items-center justify-center w-full py-2 text-white bg-teal-500 hover:bg-teal-900">
+        <button className="flex items-center justify-center w-full py-2 text-white bg-teal-500 hover:bg-teal-900 cursor-pointer transition-all">
           Comprar
         </button>
       </div>
