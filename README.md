@@ -1,50 +1,62 @@
-# React + TypeScript + Vite
+# 🌐 **Farmácia CRUD - Frontend**
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este projeto é um sistema web desenvolvido para gerenciar categorias e produtos de uma farmácia, oferecendo uma interface intuitiva e responsiva para CRUD (Criar, Ler, Atualizar e Deletar) de produtos e categorias.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 **Funcionalidades**
 
-## Expanding the ESLint configuration
+- **Gerenciamento de Categorias e Produtos**: Permite listar, cadastrar, editar e excluir categorias e produtos.
+- **Design Responsivo**: Adaptado para diferentes tamanhos de tela.
+- **Notificações Interativas**: Utiliza react-toastify para feedback visual ao usuário.
+- **Navegação Dinâmica**: Implementado com react-router-dom para uma experiência fluida.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+## 🛠️ **Tecnologias Utilizadas**
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- **React com Vite**: Framework utilizado para desenvolvimento rápido e eficiente.
+- **TypeScript**: Para maior segurança e tipagem no código.
+- **Tailwind CSS**: Estilização moderna e responsiva.
+- **React Router DOM**: Gerenciamento de rotas para navegação dinâmica.
+- **React Toastify**: Notificações para melhor experiência do usuário.
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 🔧 **Como Executar o Projeto**
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. **Clone este Repositório**:  
+   git clone https://github.com/seu-usuario/projeto_final_bloco_03.git  
+   cd projeto_final_bloco_03  
+
+2. **Instale as Dependências**:  
+   yarn install  
+
+3. **Inicie o Servidor de Desenvolvimento**:  
+   yarn dev  
+
+---
+
+## 🖥️ **Exemplo de Uso**
+
+1. **Listagem de Categorias e Produtos**: Acesse as respectivas páginas para visualizar os itens cadastrados.
+2. **Cadastro e Edição**: Utilize os formulários para adicionar ou modificar categorias e produtos.
+3. **Exclusão Segura**: Confirme antes de deletar um item.
+4. **Feedback Visual**: Notificações ao realizar ações como cadastrar ou excluir.
+
+---
+
+## ✅ **Melhorias Futuras**
+
+- Adicionar suporte a autenticação de usuários.
+- Implementar carregamento otimizado para melhor performance.
+- Criar dashboard analítico com gráficos e métricas.
+
+---
+
+## 👨‍💻 **Autor**
+
+**[Vinicius Rodrigues]**  
+
+- GitHub: [Vinicius-Rodriguess](https://github.com/Vinicius-Rodriguess)  
+- Email: rodrigues.vini.2004@gmail.com
